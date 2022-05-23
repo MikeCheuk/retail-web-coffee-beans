@@ -1,0 +1,24 @@
+
+/* general css */
+p {
+  font-family: 'poppins';
+  color:#fcfcf4;
+  margin-top: 0;
+  margin-bottom: 0;
+  }
+
+.heading {
+  display:grid;
+  place-items: center;
+  font-family: 'poppins';
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+  margin-top:0;
+}
+
+body {
+  margin:0;
+  background-color: white;
+}

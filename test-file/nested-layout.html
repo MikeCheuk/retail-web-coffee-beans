@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nested Layout</title>
+
+        <!-- import font poppin-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+        
+        <!-- css code-->
+        <style>
+          p {
+            font-family: Poppins;
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+          
+          .search-bar {
+            display: block;
+          }
+
+          .product-photo {
+            width:350px;
+            display:block;
+          }
+
+          .photo-row {
+            width: 450px;
+            margin-bottom: 10px;
+          }
+
+          .product-box-row {
+            display: block;
+            margin-bottom: 30px;
+          }
+
+          .product-box {
+            width:380px;
+            display: inline-block;
+            vertical-align: top;
+          }
+          
+          .left-column {
+            display: inline-block;
+            width: 50px;
+            vertical-align: top;
+            margin-left: 30px;
+            margin-right: 10px;
+          }
+
+          .add-button {
+            font-size: 20px;
+            color:rgb(100,100,100);
+            width: 40px;
+            height: 40px;
+            background-color: rgb(230,230,230);
+            border-color: white;
+            border-style: solid;
+            border-radius: 20%;
+          }
+
+          .add-button:hover {
+            cursor: pointer;
+            background-color: rgba(245, 245, 245, 0.4);
+          }
+          
+          .add-button:active {
+            background-color: lightcoral;
+            color:aliceblue;
+          }
+          .product-text {
+            display: inline-block;
+            width: 250px;
+          }
+
+          .product-description {
+            font-size: 14px;
+            color:rgb(100, 100, 100);
+            margin-bottom: 3px;
+
+          }
+
+          .product-name,
+          .product-price {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+          }
+
+        </style>       
+    </head>
+
+
+    <body>
+      <input class =  'search-bar' type = 'text' placeholder = 'search'>
+
+      <!-- One row of product box consists of 2 boxes-->
+      <div class = product-box-row>
+
+        <!--1st product box-->
+        <div class  = 'product-box'>
+          <div class = 'photo-row'>
+            <img class = 'product-photo' src = 'image/mockup/black_mockup.png'>
+          </div>
+          <div>
+            <div class = left-column>
+              <button class='add-button'>
+                +
+              </button>
+            </div>
+            <div class = 'product-text'>       
+              <p class = 'product-name'>
+                Classic Black
+              </p>
+              <p class = 'product-description'>
+                Blend | Dark | 340g
+              </p>
+              <p class = 'product-price'>
+                $ 250
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--2nd product box-->
+        <div class  = 'product-box'>
+          <div class = 'photo-row'>
+            <img class = 'product-photo' src = 'image/mockup/columbia_mockup.png'>
+          </div>
+          <div>
+            <div class = left-column>
+              <button class='add-button'>
+                +
+              </button>
+            </div>
+            <div class = 'product-text'>       
+              <p class = 'product-name'>
+                Columbia
+              </p>
+              <p class = 'product-description'>
+                Decaf | Dark | 340g
+              </p>
+              <p class = 'product-price'>
+                $ 200
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+       <!-- One row of product box consists of 2 boxes-->
+       <div class = product-box-row>
+
+        <!--1st product box-->
+        <div class  = 'product-box'>
+          <div class = 'photo-row'>
+            <img class = 'product-photo' src = 'image/mockup/kobe_mockup.png'>
+          </div>
+          <div>
+            <div class = left-column>
+              <button class='add-button'>
+                +
+              </button>
+            </div>
+            <div class = 'product-text'>       
+              <p class = 'product-name'>
+                Kobe
+              </p>
+              <p class = 'product-description'>
+                Blend | Medium | 340g
+              </p>
+              <p class = 'product-price'>
+                $ 320
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--2nd product box-->
+        <div class  = 'product-box'>
+          <div class = 'photo-row'>
+            <img class = 'product-photo' src = 'image/mockup/espresso_mockup.png'>
+          </div>
+          <div>
+            <div class = left-column>
+              <button class='add-button'>
+                +
+              </button>
+            </div>
+            <div class = 'product-text'>       
+              <p class = 'product-name'>
+                Espresso
+              </p>
+              <p class = 'product-description'>
+                Blend | Dark | 340g
+              </p>
+              <p class = 'product-price'>
+                $ 250
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+
+
+    <footer>
+
+    </footer>
+
+    
+</html>
