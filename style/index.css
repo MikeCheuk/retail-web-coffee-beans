@@ -79,9 +79,13 @@
 
 .learn-more-button,
 .learn-more-button-b {
-  text-decoration: underline;
+  width: 150px;
+  padding: 5px 10px;
+  text-align: center;
+  border: 2px solid #fcfcf4;
+  border-radius: 30px;
   margin-top: 8%;
-  margin-left: 72%;
+  margin-left: 65%;
 }
 
 .section-grid-b {
@@ -95,6 +99,9 @@
   color:#6d675d;
 }
 
+.learn-more-button-b {
+  border-color:#6d675d;
+}
 .section-grid-c {
   background-color: #ffffff;
 }
