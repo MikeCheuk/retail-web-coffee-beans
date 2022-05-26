@@ -16,18 +16,6 @@ footer {
   font-family: 'poppins';
 }
 
-.round-button {
-  width: fit-content;
-  border-radius: 16px;
-  text-align: center;
-  color:#fcfcf4;
-  font-size: 1em;
-  background-color: #3a332a;
-  border: 1px solid #fcfcf4;
-  padding: 5px 30px;
-  margin: 5px 10px;
-}
-
 .heading {
   display:grid;
   place-items: center;
@@ -47,7 +35,7 @@ footer {
   left: 12px;
   color:#fcfcf4;
   font-family: 'poppins';
-  font-size: 1em;
+  font-size: 0.9em;
   background-color: #3a332a;
   padding: 5px 10px;
   pointer-events: none;
@@ -117,13 +105,50 @@ footer {
   left: -50px;
 }
 
-.cart-window ul {
-  list-style-type: none;
-  line-height: 25px;
-  width:80%;
-  margin: 0;
-  padding: 5px 12px;
+
+.cart-item-container,
+.total-price-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr;
   text-align: start;
-  border-top: 1px solid #fcfcf4;
-  margin-top: 5px;
+  gap: 5px;
+
+  padding:12px 5px;
+}
+.cart-item-container div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 8ch;
+}
+
+.checkout-button {
+  width: fit-content;
+  position: absolute;
+  bottom:10px;
+  left: 8%;
+  right:8%;
+  border-radius: 16px;
+  text-align: center;
+  color:#fcfcf4;
+  font-size: 1em;
+  background-color: #3a332a;
+  border: 1px solid #fcfcf4;
+  padding: 5px 30px;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
+.total-price-container {
+  position:absolute;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  bottom: 45px;
+  padding: 18px 10px;
+  border-top: 1px solid #fcfcf4
+}
+
+.total-price-container div {
+  font-size: 1.2em;
+  font-weight: 600;
 }

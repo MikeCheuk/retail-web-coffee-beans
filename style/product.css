@@ -23,6 +23,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 45px;
   row-gap: 60px;
+  padding-left:50px;
+  padding-right: 50px;
 }
 
 .product-photo {
@@ -46,8 +48,7 @@
   width: 40px;
   height: 40px;
   background-color: rgb(230,230,230);
-  border-color: white;
-  border-style: solid;
+  border-style: none;
   border-radius: 20%;
   margin-left: 10px;
 }

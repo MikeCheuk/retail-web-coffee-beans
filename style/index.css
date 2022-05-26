@@ -56,19 +56,18 @@
 .section-text-b, 
 .section-subtext,
 .section-subtext-b {
-  margin-left: 12%;
-  margin-right: 12%;
-  margin-bottom: 3%;
+  margin: 3% 12%;
   font-family: 'poppins';
-  font-size: 3em;
+  font-size: 2.6em;
   font-weight: 600;
   color:#fcfcf4;
+  width: 67%;
 
 }
 
 .section-subtext,
 .section-subtext-b {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 400;
 }
 
