@@ -41,12 +41,16 @@ footer {
   pointer-events: none;
 }
 
+.cart-window {
+  pointer-events: auto;
+  cursor:auto;
+}
 /* cart css */
 .cart-button {
   position:fixed;
   z-index: 9;
-  bottom: 15%;
-  right:5%;
+  bottom: 8%;
+  right: 5%;
 
   width: 85px;
   height: 85px;
@@ -89,7 +93,7 @@ footer {
   opacity: 1;
 }
 .cart-button:focus .cart-window {
-  opacity:1;
+  opacity: 1;
 }
 .cart-button img {
   width: 28px;
