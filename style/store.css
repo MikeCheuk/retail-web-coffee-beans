@@ -1,0 +1,107 @@
+.store-flex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  column-gap: 5%;
+}
+
+.store-flex > div {
+  height: 300px;
+  width: 18%;
+}
+
+#s1 .top-filler {
+  background-color: lightcoral;
+}
+#s2 .top-filler {
+  background-color: lightsalmon;
+}
+#s3 .top-filler {
+  background-color: lightblue;
+}
+
+.top-filler {
+  border-radius: 8px 8px 0px 0px;
+  height: 20px;
+}
+
+.store-thumbail {
+  position: relative;
+}
+
+.store-thumbail p {
+  color: #fcfcf4;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px #313131;
+}
+
+.store-thumbail #chin {
+  position: absolute;
+  top: 50px;
+  left: 65px;
+  font-family:'Noto Sans TC';
+  font-size: 2vw;
+}
+.store-thumbail #eng {
+  position: absolute;
+  top: 90px;
+  left: 65px;
+  font-size: 1.2vw;
+}
+.store-thumbail img {
+  width:100%;
+}
+.store-thumbail:hover img {
+  filter: brightness(45%)
+}
+.store-thumbail:hover #chin{
+  left: 45px;
+}
+.store-thumbail:hover #eng{
+  left: 55px;
+}
+
+.bottom-filler {
+  height: 80px;
+  text-align: center;
+  padding-top: 35px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+}
+
+.bottom-filler a {
+  background-color: black;
+  border-radius: 32px;
+  color: #fcfcf4;
+  text-decoration: none;
+  padding: 5% 12%;
+  font-size: 1.2vw;
+}
+.bottom-filler a:hover {
+  opacity: 0.6;
+  padding: 5% 13%;
+  transition: opacity 0.15s linear;
+}
+
+
+.tab > div {display: none;}
+.tab div:target { display: grid; }
+
+.store-info {
+  padding: 6% 18%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  row-gap: 24px;
+}
+
+.store-info h2 {
+  padding: 20px 0px;
+  border-bottom: 2px solid lightgray;
+}
+
+.store-info p {
+  color: #3a332a;
+  font-size: 1em;
+  line-height: 30px;
+  font-weight: bold;
+}
+
